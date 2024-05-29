@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1823b9 0%, #3f56e7 100%);
+    margin: 0;
+}
+
+.game-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.guessField {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.submitGuess, .reset {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitGuess {
+    background-color: #2d3ace;
+    color: white;
+}
+
+.submitGuess:hover {
+    background-color: #1a2691;
+}
+
+.reset {
+    background-color: #f30921;
+    color: white;
+}
+
+.reset:hover {
+    background-color: #c82333;
+}
+
+.result-container {
+    margin: 20px 0;
+}
+
+.result-text {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #c04545;
+}
+
+#lastResult {
+    font-size: 1.2em;
+}
